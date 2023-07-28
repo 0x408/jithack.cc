@@ -4,7 +4,6 @@ import { Header } from "../../components/Header";
 import { useState } from "react";
 
 export const Settings = () => {
-
     const [checked, setChecked] = useState([]);
     const handleGsCheck = (e: any) => {
         if (e.target.checked) {
