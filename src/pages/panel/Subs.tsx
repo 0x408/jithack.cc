@@ -12,9 +12,19 @@ export const Subs = () => {
 
                 <div className="border-b border-[#222]"></div>
 
-                <div className="p-2 border border-[#B5290B]/75">
-                    <p className="text-base text-white mb-1">roblox - $?.?? USD</p>
-                    <button type="submit" className="px-2.5 ring-none outline-none border border-[#B5290B]/75 text-white placeholder-gray-400 bg-[#000]">purchase</button>
+                <div className="grid grid-cols-3 gap-2">
+                    <div className="p-2 border border-[#B5290B]/75">
+                        <p className="text-base text-white mb-1">roblox - $?.?? USD</p>
+                        <button type="submit" className="px-2.5 ring-none outline-none border border-[#B5290B]/75 text-white placeholder-gray-400 bg-[#000]">purchase</button>
+                    </div>
+                    <div className="p-2 border border-[#B5290B]/75">
+                        <p className="text-base text-white mb-1">roblox - $?.?? USD</p>
+                        <button type="submit" className="px-2.5 ring-none outline-none border border-[#B5290B]/75 text-white placeholder-gray-400 bg-[#000]">purchase</button>
+                    </div>
+                    <div className="p-2 border border-[#B5290B]/75">
+                        <p className="text-base text-white mb-1">roblox - $?.?? USD</p>
+                        <button type="submit" className="px-2.5 ring-none outline-none border border-[#B5290B]/75 text-white placeholder-gray-400 bg-[#000]">purchase</button>
+                    </div>
                 </div>
 
                 <Footer />
