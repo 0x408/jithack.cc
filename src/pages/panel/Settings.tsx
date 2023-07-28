@@ -33,7 +33,7 @@ export const Settings = () => {
                         <p className="text-base text-white mb-1">website</p>
                         <div className="flex items-center gap-2">
                             <input checked={checked} type="checkbox" name="gamesense_mode" id="gamesense_mode" onChange={handleGsCheck} className={`peer relative appearance-none shrink-0 w-4 h-4 border-2 border-transparent ${checked ? "checked:border-purple-500 checked:bg-purple-500" : "checked:border-[#B5290B] checked:bg-[#B5290B]"} rounded-sm mt-1 bg-white outline-none ring-none checked:border-0`} />
-                            <label htmlFor="gamesense_mode" className="text-white select-none">gamesense mode (beta)</label>
+                            <label htmlFor="gamesense_mode" className="text-white select-none">gamesense mode (rainbow theme)</label>
                         </div>
                     </div>
                     <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
