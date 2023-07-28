@@ -1,8 +1,11 @@
 import { Footer } from "../../../components/Footer";
 import { Sidebar } from "../../../components/Sidebar";
 import { Header } from "../../../components/Header";
+import { useGlobalState } from "../../../states/gsModeCheckbox";
 
 export const Admin = () => {
+    const [ checked ] = useGlobalState("gsModeChecked");
+
     return (
         <div className="flex">
             <Sidebar />
@@ -13,7 +16,7 @@ export const Admin = () => {
                 <div className="border-b border-[#222]"></div>
 
                 <div className="grid grid-rows-1 gap-2">
-                    <div className="p-2 border border-[#B5290B]/75">
+                    <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
                         <p className="text-base text-white mb-1">users</p>
                         <table className="w-full text-sm text-left">
                             <thead className="text-gray-400">
@@ -42,7 +45,7 @@ export const Admin = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className="p-2 border border-[#B5290B]/75">
+                    <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
                         <p className="text-base text-white mb-1">keys</p>
                         <table className="w-full text-sm text-left">
                             <thead className="text-gray-400">
@@ -64,7 +67,7 @@ export const Admin = () => {
                 </div>
 
                 <div className="flex justify-center">
-                    <button type="submit" className="p-2.5 ring-none outline-none border border-[#B5290B]/75 text-white placeholder-gray-400 bg-[#000]">generate key</button>
+                    <button type="submit" className={`p-2.5 ring-none outline-none border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>generate key</button>
                 </div>
 
                 <Footer />

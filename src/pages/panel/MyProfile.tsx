@@ -1,8 +1,11 @@
 import { Footer } from "../../components/Footer";
 import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
+import { useGlobalState } from "../../states/gsModeCheckbox";
 
 export const MyProfile = () => {
+    const [ checked ] = useGlobalState("gsModeChecked");
+
     return (
         <div className="flex">
             <Sidebar />
@@ -13,7 +16,7 @@ export const MyProfile = () => {
                 <div className="border-b border-[#222]"></div>
 
                 <div className="grid grid-row-1 gap-2">
-                    <div className="p-2 border border-[#B5290B]/75">
+                    <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
                         <div className="flex items-center gap-2">
                             <div>
                                 <img src="https://cdn.discordapp.com/avatars/860729435673985044/a_ba28e3b22dd4b557d63eb6fabbb548ef.webp?size=80" className="h-20 w-20" />
@@ -25,7 +28,7 @@ export const MyProfile = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="p-2 border border-[#B5290B]/75">
+                    <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
                         <p className="text-base text-white mb-1">user logs</p>
                         <table className="w-full text-sm text-left">
                             <thead className="text-gray-400">
