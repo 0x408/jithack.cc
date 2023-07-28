@@ -12,6 +12,9 @@ import { Admin } from "./pages/panel/admin/Admin";
 
 import { NotFound } from "./pages/errors/NotFound";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +32,15 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        draggable={false}
+        theme="dark"
+      />
     </BrowserRouter>
   );
 }
