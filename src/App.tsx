@@ -5,6 +5,7 @@ import { Login } from "./pages/Login";
 
 import { Panel } from "./pages/panel/Panel";
 import { MyProfile } from "./pages/panel/MyProfile";
+import { Subs } from "./pages/panel/Subs";
 import { Settings } from "./pages/panel/Settings";
 
 import { NotFound } from "./pages/errors/NotFound";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/panel" element={<Navigate to="/panel/home" />} />
         <Route path="/panel/home" element={<Panel />} />
         <Route path="/panel/my-profile" element={<MyProfile />} />
+        <Route path="/panel/subs" element={<Subs />} />
         <Route path="/panel/settings" element={<Settings />} />
 
         <Route path="*" element={<NotFound />} />

@@ -23,8 +23,8 @@ export const Settings = () => {
                         <p className="text-sm text-[#B5290B] mt-1">currently linked: none</p>
                     </div>
                     <div className="p-2 border border-[#B5290B]/75">
-                        <p className="text-base text-white mb-1">subs</p>
-                        <p className="text-sm text-green-500">active (beta) (420 days left)</p>
+                        <p className="text-base text-white mb-1">active subs</p>
+                        <p className="text-sm text-green-500">cheat (beta) (420 days left)</p>
                     </div>
                 </div>
 
