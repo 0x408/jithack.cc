@@ -1,18 +1,19 @@
 import { Footer } from "../../components/Footer";
 import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
-import { useState } from "react";
 import { toast } from "react-toastify";
+import { setGlobalState, useGlobalState } from "../../states/gsModeCheckbox";
 
 export const Settings = () => {
-    const [checked, setChecked] = useState(localStorage.getItem("gsmode") === "true");
+    const [ checked ] = useGlobalState("gsModeChecked");
+
     const handleGsCheck = (e: any) => {
         if (e.target.checked) {
-            setChecked(e.target.checked);
+            setGlobalState("gsModeChecked", e.target.checked);
             localStorage.setItem("gsmode", `${e.target.checked}`);
             toast.success("gamesense mode enabled");
         } else {
-            setChecked(e.target.checked);
+            setGlobalState("gsModeChecked", e.target.checked);
             localStorage.removeItem("gsmode");
             toast.success("gamesense mode disabled");
         }
