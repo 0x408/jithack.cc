@@ -14,8 +14,11 @@ export const Settings = () => {
 
                 <div className="grid grid-cols-2 gap-2">
                     <div className="p-2 border border-[#B5290B]/75">
-                        <p className="text-base text-white mb-1">profile</p>
-                        <p className="text-gray-400">placeholder</p>
+                        <p className="text-base text-white mb-1">website</p>
+                        <div className="flex items-center gap-2">
+                            <input type="checkbox" name="gamesense_mode" id="gamesense_mode" className="peer relative appearance-none shrink-0 w-4 h-4 border-2 border-transparent checked:border-[#B5290B] rounded-sm mt-1 bg-white outline-none ring-none checked:bg-[#B5290B] checked:border-0" />
+                            <label htmlFor="gamesense_mode" className="text-white select-none">gamesense mode (beta)</label>
+                        </div>
                     </div>
                     <div className="p-2 border border-[#B5290B]/75">
                         <p className="text-base text-white mb-1">discord</p>
