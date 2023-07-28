@@ -15,15 +15,15 @@ export const Panel = () => {
                 <div className="grid grid-cols-3 gap-2">
                     <div className="p-2 border border-[#B5290B]/75">
                         <p className="text-base text-white">status</p>
-                        <p className="text-gray-400"><span className="text-green-500">working</span></p>
+                        <p className="text-gray-400"><span className="text-yellow-500">in development</span></p>
                     </div>
                     <div className="p-2 border border-[#B5290B]/75">
                         <p className="text-base text-white">users</p>
-                        <p className="text-gray-400">...</p>
+                        <p className="text-gray-400">1</p>
                     </div>
                     <div className="p-2 border border-[#B5290B]/75">
                         <p className="text-base text-white">latest user</p>
-                        <p className="text-gray-400">...</p>
+                        <p className="text-gray-400">Leonoell</p>
                     </div>
                 </div>
 

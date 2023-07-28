@@ -8,6 +8,8 @@ import { MyProfile } from "./pages/panel/MyProfile";
 import { Subs } from "./pages/panel/Subs";
 import { Settings } from "./pages/panel/Settings";
 
+import { Admin } from "./pages/panel/admin/Admin";
+
 import { NotFound } from "./pages/errors/NotFound";
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="/panel/my-profile" element={<MyProfile />} />
         <Route path="/panel/subs" element={<Subs />} />
         <Route path="/panel/settings" element={<Settings />} />
+
+        <Route path="/panel/admin" element={<Admin />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
