@@ -8,11 +8,11 @@ export const Settings = () => {
     const [checked, setChecked] = useState(localStorage.getItem("gsmode") === "true");
     const handleGsCheck = (e: any) => {
         if (e.target.checked) {
-            setChecked(true);
+            setChecked(e.target.checked);
             localStorage.setItem("gsmode", `${e.target.checked}`);
             toast.success("gamesense mode enabled");
         } else {
-            setChecked(false);
+            setChecked(e.target.checked);
             localStorage.removeItem("gsmode");
             toast.success("gamesense mode disabled");
         }
