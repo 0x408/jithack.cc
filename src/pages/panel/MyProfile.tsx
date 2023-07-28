@@ -18,7 +18,7 @@ export const MyProfile = () => {
                             <img src="https://cdn.discordapp.com/avatars/860729435673985044/a_ba28e3b22dd4b557d63eb6fabbb548ef.webp?size=80" className="h-20 w-20" />
                         </div>
                         <div className="flex flex-col">
-                            <p className="text-white text-xl">ophx</p>
+                            <p className="text-white text-xl">Leonoell</p>
                             <i className="text-[#B5290B]">uid 1</i>
                             <p className="text-gray-400">last injected: today at 8:25 pm</p>
                         </div>

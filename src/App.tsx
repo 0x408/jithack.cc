@@ -5,6 +5,7 @@ import { Login } from "./pages/Login";
 
 import { Panel } from "./pages/panel/Panel";
 import { MyProfile } from "./pages/panel/MyProfile";
+import { Settings } from "./pages/panel/Settings";
 
 import { NotFound } from "./pages/errors/NotFound";
 
@@ -15,8 +16,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
 
-        <Route path="/panel/home" element={<Panel />} />
+        <Route path="/panel" element={<Panel />} />
         <Route path="/panel/my-profile" element={<MyProfile />} />
+        <Route path="/panel/settings" element={<Settings />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

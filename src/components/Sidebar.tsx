@@ -9,7 +9,7 @@ export const Sidebar = () => {
                         <p className="text-[#B5290B] text-center">jithack.cc</p>
                     </li>
                     <li>
-                        <NavLink to="/panel/home" className={({ isActive }) => 
+                        <NavLink to="/panel" className={({ isActive }) => 
                             isActive ? "flex items-center p-2.5 text-white border border-[#B5290B]/75" : "flex items-center p-2.5 text-white border border-transparent hover:border-[#B5290B]/75"
                         }>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 mr-2">

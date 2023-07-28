@@ -1,6 +1,6 @@
 import { Footer } from "../../components/Footer";
 import { Sidebar } from "../../components/Sidebar";
-import { Header } from "../../components/Header"
+import { Header } from "../../components/Header";
 
 export const Panel = () => {
     return (
