@@ -23,7 +23,7 @@ export const MyProfile = () => {
                             </div>
                             <div className="flex flex-col">
                                 <p className="text-white text-xl">Leonoell</p>
-                                <i className="text-[#B5290B]">uid 1</i>
+                                <i className={`${checked ? "text-purple-500" : "text-[#B5290B]"}`}>uid 1</i>
                                 <p className="text-gray-400">last injected: today at 8:25 pm</p>
                             </div>
                         </div>
