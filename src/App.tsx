@@ -19,7 +19,7 @@ import { RandCol } from "./utils/RandCol";
 
 function App() {
   RandCol();
-  
+
   return (
     <BrowserRouter>
       <Routes>
@@ -43,6 +43,9 @@ function App() {
         closeOnClick
         rtl={false}
         draggable={false}
+        pauseOnHover={false}
+        pauseOnFocusLoss={false}
+        closeButton={false}
         theme="dark"
       />
     </BrowserRouter>
