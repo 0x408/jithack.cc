@@ -6,6 +6,7 @@ import { setGlobalState, useGlobalState } from "../../states/globalState";
 
 export const Settings = () => {
     const [ checked ] = useGlobalState("gsModeChecked");
+    
     const handleGsCheck = (e: any) => {
         if (e.target.checked) {
             setGlobalState("gsModeChecked", e.target.checked);
