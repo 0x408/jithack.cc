@@ -5,7 +5,7 @@ export const RandCol = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setGlobalState("randomColor", `#${Math.floor(Math.random() * 16777215).toString(16)}`);
-        }, 500);
+        }, 300);
         return () => clearInterval(interval); 
     }, []);
 }
