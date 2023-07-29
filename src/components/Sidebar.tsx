@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useGlobalState } from "../states/gsModeCheckbox";
+import { useGlobalState } from "../states/globalState";
 
 export const Sidebar = () => {
     const [ checked ] = useGlobalState("gsModeChecked");

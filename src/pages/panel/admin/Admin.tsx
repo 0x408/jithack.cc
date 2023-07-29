@@ -1,7 +1,7 @@
 import { Footer } from "../../../components/Footer";
 import { Sidebar } from "../../../components/Sidebar";
 import { Header } from "../../../components/Header";
-import { useGlobalState } from "../../../states/gsModeCheckbox";
+import { useGlobalState } from "../../../states/globalState";
 
 export const Admin = () => {
     const [ checked ] = useGlobalState("gsModeChecked");

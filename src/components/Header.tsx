@@ -1,4 +1,4 @@
-import { useGlobalState } from "../states/gsModeCheckbox";
+import { useGlobalState } from "../states/globalState";
 
 type HeaderProps = {
     page: string,

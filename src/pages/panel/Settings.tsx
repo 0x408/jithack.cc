@@ -2,7 +2,7 @@ import { Footer } from "../../components/Footer";
 import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
 import { toast } from "react-toastify";
-import { setGlobalState, useGlobalState } from "../../states/gsModeCheckbox";
+import { setGlobalState, useGlobalState } from "../../states/globalState";
 
 export const Settings = () => {
     const [ checked ] = useGlobalState("gsModeChecked");
