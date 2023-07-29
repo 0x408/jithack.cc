@@ -6,6 +6,8 @@ import { useGlobalState } from "../../states/globalState";
 export const Subs = () => {
     const [ checked ] = useGlobalState("gsModeChecked");
 
+    const [ randomColor ] = useGlobalState("randomColor");
+
     return (
         <div className="flex">
             <Sidebar />
@@ -16,17 +18,17 @@ export const Subs = () => {
                 <div className="border-b border-[#222]"></div>
 
                 <div className="grid grid-cols-3 gap-2">
-                    <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
+                    <div className={`p-2 border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"}`}>
                         <p className="text-base text-white mb-1">roblox - $?.?? USD</p>
-                        <button type="submit" className={`px-2.5 ring-none outline-none border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>purchase</button>
+                        <button type="submit" className={`px-2.5 ring-none outline-none border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>purchase</button>
                     </div>
-                    <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
+                    <div className={`p-2 border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"}`}>
                         <p className="text-base text-white mb-1">roblox - $?.?? USD</p>
-                        <button type="submit" className={`px-2.5 ring-none outline-none border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>purchase</button>
+                        <button type="submit" className={`px-2.5 ring-none outline-none border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>purchase</button>
                     </div>
-                    <div className={`p-2 border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"}`}>
+                    <div className={`p-2 border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"}`}>
                         <p className="text-base text-white mb-1">roblox - $?.?? USD</p>
-                        <button type="submit" className={`px-2.5 ring-none outline-none border ${checked ? "border-purple-500/75" : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>purchase</button>
+                        <button type="submit" className={`px-2.5 ring-none outline-none border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>purchase</button>
                     </div>
                 </div>
 

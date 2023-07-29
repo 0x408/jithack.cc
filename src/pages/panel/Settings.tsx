@@ -3,7 +3,6 @@ import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
 import { toast } from "react-toastify";
 import { setGlobalState, useGlobalState } from "../../states/globalState";
-import { useEffect } from "react";
 
 export const Settings = () => {
     const [ checked ] = useGlobalState("gsModeChecked");
@@ -19,13 +18,7 @@ export const Settings = () => {
         }
     }
 
-    const [ randomColor, setRandomColor ] = useGlobalState("randomColor");
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setRandomColor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
-        }, 500);
-        return () => clearInterval(interval); 
-    }, []);
+    const [ randomColor ] = useGlobalState("randomColor");
 
     return (
         <div className="flex">

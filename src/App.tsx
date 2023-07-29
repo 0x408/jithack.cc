@@ -15,7 +15,11 @@ import { NotFound } from "./pages/errors/NotFound";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { RandCol } from "./utils/RandCol";
+
 function App() {
+  RandCol();
+  
   return (
     <BrowserRouter>
       <Routes>
