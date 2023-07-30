@@ -19,6 +19,15 @@ export const Admin = () => {
 
                 <div className="grid grid-rows-1 gap-2">
                     <div className={`p-2 border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"}`}>
+                        <p className="text-base text-white mb-1">message of the day</p>
+                        <div className="space-y-2">
+                            <input required type="text" name="message" id="message" placeholder="message" className={`p-2.5 w-full ring-none outline-none border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`} />
+                            <button type="submit" className={`px-2.5 ring-none outline-none border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>
+                                submit
+                            </button>
+                        </div>
+                    </div>
+                    <div className={`p-2 border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"}`}>
                         <p className="text-base text-white mb-1">users</p>
                         <table className="w-full text-sm text-left">
                             <thead className="text-gray-400">
@@ -69,7 +78,9 @@ export const Admin = () => {
                 </div>
 
                 <div className="flex justify-center">
-                    <button type="submit" className={`p-2.5 ring-none outline-none border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>generate key</button>
+                    <button type="submit" className={`p-2.5 ring-none outline-none border ${checked ? `border-[${randomColor}]` : "border-[#B5290B]/75"} text-white placeholder-gray-400 bg-[#000]`}>
+                        generate key
+                    </button>
                 </div>
 
                 <Footer />
