@@ -2,11 +2,14 @@ import { Footer } from "../../components/Footer";
 import { Sidebar } from "../../components/Sidebar";
 import { Header } from "../../components/Header";
 import { useGlobalState } from "../../states/globalState";
+import { useState } from "react";
 
 export const MyProfile = () => {
     const [ checked ] = useGlobalState("gsModeChecked");
 
     const [ randomColor ] = useGlobalState("randomColor");
+
+    const [ showIp, setShowIp ] = useState(false);
 
     return (
         <div className="flex">
@@ -41,7 +44,18 @@ export const MyProfile = () => {
                             </thead>
                             <tbody className="text-white">
                                 <tr>
-                                    <td>logged in with ip <i>1.3.3.7</i></td>
+                                    <td>
+                                        logged in with ip
+                                        {showIp
+                                        ?
+                                        <span className="ml-2">
+                                            1.3.3.7
+                                        </span>
+                                        :
+                                        <span onClick={() => setShowIp(true)} className="bg-[#111] text-[#111] ml-2 cursor-pointer select-none">
+                                            1.3.3.7
+                                        </span>}
+                                    </td>
                                     <td>today at 10:42 pm</td>
                                 </tr>
                             </tbody>
