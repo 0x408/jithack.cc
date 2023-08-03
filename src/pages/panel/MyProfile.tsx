@@ -48,11 +48,11 @@ export const MyProfile = () => {
                                         logged in with ip
                                         {showIp
                                         ?
-                                        <span className="ml-2">
+                                        <i className="ml-2 bg-[#111]/50 px-2">
                                             1.3.3.7
-                                        </span>
+                                        </i>
                                         :
-                                        <span onClick={() => setShowIp(true)} className="bg-[#111] text-[#111] ml-2 cursor-pointer select-none">
+                                        <span onClick={() => setShowIp(true)} className="bg-[#111] text-[#111] px-2 ml-2 cursor-pointer select-none">
                                             1.3.3.7
                                         </span>}
                                     </td>
