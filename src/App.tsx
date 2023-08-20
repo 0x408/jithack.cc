@@ -8,6 +8,9 @@ import { MyProfile } from "./pages/panel/MyProfile";
 import { Subs } from "./pages/panel/Subs";
 import { Settings } from "./pages/panel/Settings";
 
+import { ConfigList } from "./pages/panel/configs/ConfigList";
+import { Config } from "./pages/panel/configs/Config";
+
 import { Admin } from "./pages/panel/admin/Admin";
 
 import { NotFound } from "./pages/errors/NotFound";
@@ -31,6 +34,9 @@ function App() {
         <Route path="/panel/my-profile" element={<MyProfile />} />
         <Route path="/panel/subs" element={<Subs />} />
         <Route path="/panel/settings" element={<Settings />} />
+
+        <Route path="/panel/configs" element={<ConfigList />} />
+        <Route path="/panel/configs/:cfgTitle" element={<Config />} />
 
         <Route path="/panel/admin" element={<Admin />} />
 

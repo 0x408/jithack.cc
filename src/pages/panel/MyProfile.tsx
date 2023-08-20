@@ -48,7 +48,7 @@ export const MyProfile = () => {
                                         logged in with ip
                                         {showIp
                                         ?
-                                        <i className="ml-2 bg-[#111]/50 px-2">
+                                        <i className="ml-2 bg-[#111]/75 px-2">
                                             1.3.3.7
                                         </i>
                                         :
